@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VMess 协议 | Project V</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="Project V 是一个工具集合，它可以帮助你打造专属的基础通信网络">
+    <link rel="preload" href="/assets/css/0.styles.30dbb8dd.css" as="style"><link rel="preload" href="/assets/js/app.4a028816.js" as="script"><link rel="preload" href="/assets/js/2.f9df5c2e.js" as="script"><link rel="preload" href="/assets/js/45.1ad446f8.js" as="script"><link rel="prefetch" href="/assets/js/10.055cc607.js"><link rel="prefetch" href="/assets/js/11.c8d744b6.js"><link rel="prefetch" href="/assets/js/12.5343eff0.js"><link rel="prefetch" href="/assets/js/13.3410cca1.js"><link rel="prefetch" href="/assets/js/14.aaae6f02.js"><link rel="prefetch" href="/assets/js/15.8a078ac5.js"><link rel="prefetch" href="/assets/js/16.c066870c.js"><link rel="prefetch" href="/assets/js/17.d4ce86a1.js"><link rel="prefetch" href="/assets/js/18.9256d1eb.js"><link rel="prefetch" href="/assets/js/19.e6d2f79a.js"><link rel="prefetch" href="/assets/js/20.03109b89.js"><link rel="prefetch" href="/assets/js/21.0dd5a55d.js"><link rel="prefetch" href="/assets/js/22.48874bea.js"><link rel="prefetch" href="/assets/js/23.7465ad55.js"><link rel="prefetch" href="/assets/js/24.76cbe72b.js"><link rel="prefetch" href="/assets/js/25.315151af.js"><link rel="prefetch" href="/assets/js/26.e5ee9309.js"><link rel="prefetch" href="/assets/js/27.89746cdf.js"><link rel="prefetch" href="/assets/js/28.08cfbb3c.js"><link rel="prefetch" href="/assets/js/29.1fceb918.js"><link rel="prefetch" href="/assets/js/3.c145900d.js"><link rel="prefetch" href="/assets/js/30.55f71cc2.js"><link rel="prefetch" href="/assets/js/31.c4320067.js"><link rel="prefetch" href="/assets/js/32.be65114f.js"><link rel="prefetch" href="/assets/js/33.1d261da9.js"><link rel="prefetch" href="/assets/js/34.33871577.js"><link rel="prefetch" href="/assets/js/35.7ce5f683.js"><link rel="prefetch" href="/assets/js/36.be44b079.js"><link rel="prefetch" href="/assets/js/37.55903333.js"><link rel="prefetch" href="/assets/js/38.77b51bc7.js"><link rel="prefetch" href="/assets/js/39.6b2c23ce.js"><link rel="prefetch" href="/assets/js/4.ea6b9a04.js"><link rel="prefetch" href="/assets/js/40.eb827bb9.js"><link rel="prefetch" href="/assets/js/41.2f4c37b4.js"><link rel="prefetch" href="/assets/js/42.ea342e9d.js"><link rel="prefetch" href="/assets/js/43.91840ff0.js"><link rel="prefetch" href="/assets/js/44.72b1f92f.js"><link rel="prefetch" href="/assets/js/46.555d2b2e.js"><link rel="prefetch" href="/assets/js/47.4fd3fade.js"><link rel="prefetch" href="/assets/js/5.4a93b8ce.js"><link rel="prefetch" href="/assets/js/6.6f7c27a2.js"><link rel="prefetch" href="/assets/js/7.0b205a0a.js"><link rel="prefetch" href="/assets/js/8.38867a81.js"><link rel="prefetch" href="/assets/js/9.7a7a9efc.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.30dbb8dd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="v2ray_1024.png" alt="Project V" class="logo"> <span class="site-name can-hide">Project V</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开始" class="dropdown-title"><span class="title">开始</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/chapter_00/workflow.html" class="nav-link">
+  工作机制
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_00/install.html" class="nav-link">
+  下载安装
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_00/start.html" class="nav-link">
+  新手上路
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_00/command.html" class="nav-link">
+  命令参数
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="配置文件" class="dropdown-title"><span class="title">配置文件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/chapter_02/01_overview.html" class="nav-link">
+  文件格式
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/policy.html" class="nav-link">
+  策略
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/03_routing.html" class="nav-link">
+  路由
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/04_dns.html" class="nav-link">
+  DNS 配置
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/mux.html" class="nav-link">
+  Mux 配置
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/api.html" class="nav-link">
+  API 配置
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/stats.html" class="nav-link">
+  统计信息
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/reverse.html" class="nav-link">
+  反向代理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="协议列表" class="dropdown-title"><span class="title">协议列表</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/blackhole.html" class="nav-link">
+  Blackhole
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/dns.html" class="nav-link">
+  DNS
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/dokodemo.html" class="nav-link">
+  Dokodemo
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/http.html" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/mtproto.html" class="nav-link">
+  MTProto
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/shadowsocks.html" class="nav-link">
+  Shadowsocks
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/socks.html" class="nav-link">
+  Socks
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/vmess.html" class="nav-link">
+  VMess
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="传输配置" class="dropdown-title"><span class="title">传输配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/chapter_02/transport/tcp.html" class="nav-link">
+  TCP
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/transport/mkcp.html" class="nav-link">
+  mKCP
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/transport/websocket.html" class="nav-link">
+  WebSocket
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/transport/h2.html" class="nav-link">
+  HTTP/2
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/transport/domainsocket.html" class="nav-link">
+  DomainSocket
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/transport/quic.html" class="nav-link">
+  QUIC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发手册" class="dropdown-title"><span class="title">开发手册</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/developer/intro/guide.html" class="nav-link">
+  开发指引
+</a></li><li class="dropdown-item"><!----> <a href="/developer/intro/design.html" class="nav-link">
+  核心设计
+</a></li><li class="dropdown-item"><!----> <a href="/developer/intro/compile.html" class="nav-link">
+  配置开发环境
+</a></li><li class="dropdown-item"><h4>
+          协议细节
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/protocols/vmess.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Vmess 协议
+</a></li><li class="dropdown-subitem"><a href="/developer/protocols/mkcp.html" class="nav-link">
+  mKCP 协议
+</a></li><li class="dropdown-subitem"><a href="/developer/protocols/muxcool.html" class="nav-link">
+  Mux.Cool 协议
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/chapter_00/faq.html" class="nav-link">
+  常见问题
+</a></div><div class="nav-item"><a href="/awesome/tools.html" class="nav-link">
+  工具列表
+</a></div><div class="nav-item"><a href="https://github.com/v2fly/v2ray-core" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开始" class="dropdown-title"><span class="title">开始</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/chapter_00/workflow.html" class="nav-link">
+  工作机制
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_00/install.html" class="nav-link">
+  下载安装
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_00/start.html" class="nav-link">
+  新手上路
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_00/command.html" class="nav-link">
+  命令参数
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="配置文件" class="dropdown-title"><span class="title">配置文件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/chapter_02/01_overview.html" class="nav-link">
+  文件格式
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/policy.html" class="nav-link">
+  策略
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/03_routing.html" class="nav-link">
+  路由
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/04_dns.html" class="nav-link">
+  DNS 配置
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/mux.html" class="nav-link">
+  Mux 配置
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/api.html" class="nav-link">
+  API 配置
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/stats.html" class="nav-link">
+  统计信息
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/reverse.html" class="nav-link">
+  反向代理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="协议列表" class="dropdown-title"><span class="title">协议列表</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/blackhole.html" class="nav-link">
+  Blackhole
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/dns.html" class="nav-link">
+  DNS
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/dokodemo.html" class="nav-link">
+  Dokodemo
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/http.html" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/mtproto.html" class="nav-link">
+  MTProto
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/shadowsocks.html" class="nav-link">
+  Shadowsocks
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/socks.html" class="nav-link">
+  Socks
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/protocols/vmess.html" class="nav-link">
+  VMess
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="传输配置" class="dropdown-title"><span class="title">传输配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/chapter_02/transport/tcp.html" class="nav-link">
+  TCP
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/transport/mkcp.html" class="nav-link">
+  mKCP
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/transport/websocket.html" class="nav-link">
+  WebSocket
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/transport/h2.html" class="nav-link">
+  HTTP/2
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/transport/domainsocket.html" class="nav-link">
+  DomainSocket
+</a></li><li class="dropdown-item"><!----> <a href="/chapter_02/transport/quic.html" class="nav-link">
+  QUIC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发手册" class="dropdown-title"><span class="title">开发手册</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/developer/intro/guide.html" class="nav-link">
+  开发指引
+</a></li><li class="dropdown-item"><!----> <a href="/developer/intro/design.html" class="nav-link">
+  核心设计
+</a></li><li class="dropdown-item"><!----> <a href="/developer/intro/compile.html" class="nav-link">
+  配置开发环境
+</a></li><li class="dropdown-item"><h4>
+          协议细节
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/protocols/vmess.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Vmess 协议
+</a></li><li class="dropdown-subitem"><a href="/developer/protocols/mkcp.html" class="nav-link">
+  mKCP 协议
+</a></li><li class="dropdown-subitem"><a href="/developer/protocols/muxcool.html" class="nav-link">
+  Mux.Cool 协议
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/chapter_00/faq.html" class="nav-link">
+  常见问题
+</a></div><div class="nav-item"><a href="/awesome/tools.html" class="nav-link">
+  工具列表
+</a></div><div class="nav-item"><a href="https://github.com/v2fly/v2ray-core" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>VMess 协议</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/developer/protocols/vmess.html#版本" class="sidebar-link">版本</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/developer/protocols/vmess.html#依赖" class="sidebar-link">依赖</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/developer/protocols/vmess.html#底层协议" class="sidebar-link">底层协议</a></li><li class="sidebar-sub-header"><a href="/developer/protocols/vmess.html#用户-id" class="sidebar-link">用户 ID</a></li><li class="sidebar-sub-header"><a href="/developer/protocols/vmess.html#函数" class="sidebar-link">函数</a></li></ul></li><li><a href="/developer/protocols/vmess.html#通讯过程" class="sidebar-link">通讯过程</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/developer/protocols/vmess.html#客户端请求" class="sidebar-link">客户端请求</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/developer/protocols/vmess.html#认证信息" class="sidebar-link">认证信息</a></li><li class="sidebar-sub-header"><a href="/developer/protocols/vmess.html#指令部分" class="sidebar-link">指令部分</a></li><li class="sidebar-sub-header"><a href="/developer/protocols/vmess.html#数据部分" class="sidebar-link">数据部分</a></li></ul></li><li><a href="/developer/protocols/vmess.html#服务器应答" class="sidebar-link">服务器应答</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/developer/protocols/vmess.html#动态端口指令" class="sidebar-link">动态端口指令</a></li></ul></li><li><a href="/developer/protocols/vmess.html#注释" class="sidebar-link">注释</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vmess-协议"><a href="#vmess-协议" class="header-anchor">#</a> VMess 协议</h1> <p>VMess 是 V2Ray 原创的加密通讯协议。</p> <h2 id="版本"><a href="#版本" class="header-anchor">#</a> 版本</h2> <p>当前版本号为 1。</p> <h2 id="依赖"><a href="#依赖" class="header-anchor">#</a> 依赖</h2> <h3 id="底层协议"><a href="#底层协议" class="header-anchor">#</a> 底层协议</h3> <p>VMess 是一个基于 TCP 的协议，所有数据使用 TCP 传输。</p> <h3 id="用户-id"><a href="#用户-id" class="header-anchor">#</a> 用户 ID</h3> <p>ID 等价于 <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier" target="_blank" rel="noopener noreferrer">UUID<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，是一个 16 字节长的随机数，它的作用相当于一个令牌（Token）。
+一个 ID 形如：de305d54-75b4-431b-adb2-eb6b9e546014，几乎完全随机，可以使用任何的 UUID 生成器来生成，比如<a href="https://www.uuidgenerator.net/" target="_blank" rel="noopener noreferrer">这个<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <p>用户 ID 可在<a href="/developer/chapter_02/01_overview.html">配置文件</a>中指定。</p> <h3 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h3> <ul><li>MD5: <a href="https://en.wikipedia.org/wiki/MD5" target="_blank" rel="noopener noreferrer">MD5 函数<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <ul><li>输入参数为任意长度的 byte 数组</li> <li>输出为一个 16 byte 的数组</li></ul></li> <li>HMAC: <a href="https://en.wikipedia.org/wiki/Hash-based_message_authentication_code" target="_blank" rel="noopener noreferrer">HMAC 函数<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <ul><li>输入参数为：
+<ul><li>H：散列函数</li> <li>K：密钥，任意长度的 byte 数组</li> <li>M：消息，任意长度的 byte 数组</li></ul></li></ul></li> <li>Shake: <a href="https://en.wikipedia.org/wiki/SHA-3" target="_blank" rel="noopener noreferrer">SHA3-Shake128 函数<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <ul><li>输入参数为任意长度的字符串</li> <li>输出为任意长度的字符串</li></ul></li></ul> <h2 id="通讯过程"><a href="#通讯过程" class="header-anchor">#</a> 通讯过程</h2> <p>VMess 是一个无状态协议，即客户端和服务器之间不需要握手即可直接传输数据，每一次数据传输对之前和之后的其它数据传输没有影响。
+VMess 的客户端发起一次请求，服务器判断该请求是否来自一个合法的客户端。如验证通过，则转发该请求，并把获得的响应发回给客户端。
+VMess 使用非对称格式，即客户端发出的请求和服务器端的响应使用了不同的格式。</p> <h2 id="客户端请求"><a href="#客户端请求" class="header-anchor">#</a> 客户端请求</h2> <table><thead><tr><th>16 字节</th> <th>X 字节</th> <th>余下部分</th></tr></thead> <tbody><tr><td>认证信息</td> <td>指令部分</td> <td>数据部分</td></tr></tbody></table> <h3 id="认证信息"><a href="#认证信息" class="header-anchor">#</a> 认证信息</h3> <p>认证信息是一个 16 字节的哈希（hash）值，它的计算方式如下：</p> <ul><li>H = MD5</li> <li>K = 用户 ID (16 字节)</li> <li>M = UTC 时间，精确到秒，取值为当前时间的前后 30 秒随机值(8 字节, Big Endian)</li> <li>Hash = HMAC(H, K, M)</li></ul> <h3 id="指令部分"><a href="#指令部分" class="header-anchor">#</a> 指令部分</h3> <p>指令部分经过 AES-128-CFB 加密：</p> <ul><li>Key：MD5(用户 ID + []byte('c48619fe-8f02-49e0-b9e9-edf763e17e21'))</li> <li>IV：MD5(X + X + X + X)，X = []byte(认证信息生成的时间) (8 字节, Big Endian)</li></ul> <table><thead><tr><th style="text-align:center;">1 字节</th> <th style="text-align:center;">16 字节</th> <th style="text-align:center;">16 字节</th> <th style="text-align:center;">1 字节</th> <th style="text-align:center;">1 字节</th> <th style="text-align:center;">4 位</th> <th style="text-align:center;">4 位</th> <th style="text-align:center;">1 字节</th> <th style="text-align:center;">1 字节</th> <th style="text-align:center;">2 字节</th> <th style="text-align:center;">1 字节</th> <th style="text-align:center;">N 字节</th> <th style="text-align:center;">P 字节</th> <th style="text-align:center;">4 字节</th></tr></thead> <tbody><tr><td style="text-align:center;">版本号 Ver</td> <td style="text-align:center;">数据加密 IV</td> <td style="text-align:center;">数据加密 Key</td> <td style="text-align:center;">响应认证 V</td> <td style="text-align:center;">选项 Opt</td> <td style="text-align:center;">余量 P</td> <td style="text-align:center;">加密方式 Sec</td> <td style="text-align:center;">保留</td> <td style="text-align:center;">指令 Cmd</td> <td style="text-align:center;">端口 Port</td> <td style="text-align:center;">地址类型 T</td> <td style="text-align:center;">地址 A</td> <td style="text-align:center;">随机值</td> <td style="text-align:center;">校验 F</td></tr></tbody></table> <p>选项 Opt 细节：（当某一位为 1 时，表示该选项启用）</p> <table><thead><tr><th style="text-align:center;">0</th> <th style="text-align:center;">1</th> <th style="text-align:center;">2</th> <th style="text-align:center;">3</th> <th style="text-align:center;">4</th> <th style="text-align:center;">5</th> <th style="text-align:center;">6</th> <th style="text-align:center;">7</th></tr></thead> <tbody><tr><td style="text-align:center;">X</td> <td style="text-align:center;">X</td> <td style="text-align:center;">X</td> <td style="text-align:center;">X</td> <td style="text-align:center;">X</td> <td style="text-align:center;">M</td> <td style="text-align:center;">R</td> <td style="text-align:center;">S</td></tr></tbody></table> <p>其中：</p> <ul><li>版本号 Ver：始终为 1；</li> <li>数据加密 IV：随机值；</li> <li>数据加密 Key：随机值；</li> <li>响应认证 V：随机值；</li> <li>选项 Opt：
+<ul><li>S (0x01)：标准格式的数据流（建议开启）；</li> <li>R (0x02)：客户端期待重用 TCP 连接（V2Ray 2.23+ 弃用）；
+<ul><li>只有当 S 开启时，这一项才有效；</li></ul></li> <li>M (0x04)：开启元数据混淆（建议开启）；
+<ul><li>只有当 S 开启时，这一项才有效；</li> <li>当其项开启时，客户端和服务器端需要分别构造两个 Shake 实例，分别为 RequestMask = Shake(请求数据 IV), ResponseMask = Shake(响应数据 IV)。</li></ul></li> <li>X：保留</li></ul></li> <li>余量 P：在校验值之前加入 P 字节的随机值；</li> <li>加密方式：指定数据部分的加密方式，可选的值有：
+<ul><li>0x00：AES-128-CFB；</li> <li>0x01：不加密；</li> <li>0x02：AES-128-GCM；</li> <li>0x03：ChaCha20-Poly1305；</li></ul></li> <li>指令 Cmd：
+<ul><li>0x01：TCP 数据；</li> <li>0x02：UDP 数据；</li></ul></li> <li>端口 Port：Big Endian 格式的整型端口号；</li> <li>地址类型 T：
+<ul><li>0x01：IPv4</li> <li>0x02：域名</li> <li>0x03：IPv6</li></ul></li> <li>地址 A：
+<ul><li>当 T = 0x01 时，A 为 4 字节 IPv4 地址；</li> <li>当 T = 0x02 时，A 为 1 字节长度（L） + L 字节域名；</li> <li>当 T = 0x03 时，A 为 16 字节 IPv6 地址；</li></ul></li> <li>校验 F：指令部分除 F 外所有内容的 FNV1a hash；</li></ul> <h3 id="数据部分"><a href="#数据部分" class="header-anchor">#</a> 数据部分</h3> <p>数据部分有两种格式，默认为基本格式。</p> <h4 id="基本格式-（弃用）"><a href="#基本格式-（弃用）" class="header-anchor">#</a> 基本格式 （弃用）</h4> <p><strong>此格式仅作为向后兼容所用，在之后的版本中可能被删除。</strong></p> <p>所有数据均认为是请求的实际内容。这些内容将被发往指令部分所指定的地址。当 Cmd = 0x01 时，这些数据将以 TCP 的形式发送；当 Cmd = 0x02 时，这些数据将以 UDP 形式发送。</p> <p>此格式支持“不加密”和“AES-128-CFB”两种加密方式，加密的 Key 和 IV 由指令部分指定。</p> <h4 id="标准格式"><a href="#标准格式" class="header-anchor">#</a> 标准格式</h4> <p>当 Opt(S) 开启时，数据部分使用此格式。实际的请求数据被分割为若干个小块，每个小块的格式如下。服务器校验完所有的小块之后，再按基本格式的方式进行转发。</p> <table><thead><tr><th style="text-align:center;">2 字节</th> <th style="text-align:center;">L 字节</th></tr></thead> <tbody><tr><td style="text-align:center;">长度 L</td> <td style="text-align:center;">数据包</td></tr></tbody></table> <p>其中：</p> <ul><li>长度 L：Big Endian 格式的整型，最大值为 2^14；
+<ul><li>当 Opt(M) 开启时，L 的值 = 真实值 xor Mask。Mask = (RequestMask.NextByte() &lt;&lt; 8) + RequestMask.NextByte()；</li></ul></li> <li>数据包：由指定的加密方式加密过的数据包；</li></ul> <p>在传输结束之前，数据包中必须有实际数据，即除了长度和认证数据之外的数据。当传输结束时，客户端必须发送一个空的数据包，即 L = 0（不加密） 或认证数据长度（有加密），来表示传输结束。</p> <p>按加密方式不同，数据包的格式如下：</p> <ul><li>不加密：
+<ul><li>L 字节：实际数据；</li></ul></li> <li>AES-128-CFB：整个数据部分使用 AES-128-CFB 加密
+<ul><li>4 字节：实际数据的 FNV1a hash；</li> <li>L - 4 字节：实际数据；</li></ul></li> <li>AES-128-GCM：Key 为指令部分的 Key，IV = count (2 字节) + IV (10 字节)。count 从 0 开始递增，每个数据包加 1；IV 为 指令部分 IV 的第 3 至第 12 字节。
+<ul><li>L - 16 字节：实际数据；</li> <li>16 字节：GCM 认证信息</li></ul></li> <li>ChaCha20-Poly1305：Key = MD5(指令部分 Key) + MD5(MD5(指令部分 Key))，IV = count (2 字节) + IV (10 字节)。count 从 0 开始递增，每个数据包加 1；IV 为 指令部分 IV 的第 3 至第 12 字节。
+<ul><li>L - 16 字节：实际数据；</li> <li>16 字节：Poly1305 认证信息</li></ul></li></ul> <h2 id="服务器应答"><a href="#服务器应答" class="header-anchor">#</a> 服务器应答</h2> <p>应答头部数据使用 AES-128-CFB 加密，IV 为 MD5(数据加密 IV)，Key 为 MD5(数据加密 Key)。实际应答数据视加密设置不同而不同。</p> <table><thead><tr><th>1 字节</th> <th>1 字节</th> <th>1 字节</th> <th>1 字节</th> <th>M 字节</th> <th>余下部分</th></tr></thead> <tbody><tr><td>响应认证 V</td> <td>选项 Opt</td> <td>指令 Cmd</td> <td>指令长度 M</td> <td>指令内容</td> <td>实际应答数据</td></tr></tbody></table> <p>其中：</p> <ul><li>响应认证 V：必须和客户端请求中的响应认证 V 一致；</li> <li>选项 Opt：
+<ul><li>0x01：服务器端准备重用 TCP 连接（V2Ray 2.23+ 弃用）；</li></ul></li> <li>指令 Cmd：
+<ul><li>0x01：动态端口指令</li></ul></li> <li>实际应答数据：
+<ul><li>如果请求中的 Opt(S) 开启，则使用标准格式，否则使用基本格式。</li> <li>格式均和请求数据相同。
+<ul><li>当 Opt(M) 开启时，长度 L 的值 = 真实值 xor Mask。Mask = (ResponseMask.NextByte() &lt;&lt; 8) + ResponseMask.NextByte()；</li></ul></li></ul></li></ul> <h3 id="动态端口指令"><a href="#动态端口指令" class="header-anchor">#</a> 动态端口指令</h3> <table><thead><tr><th>1 字节</th> <th>2 字节</th> <th>16 字节</th> <th>2 字节</th> <th>1 字节</th> <th>1 字节</th></tr></thead> <tbody><tr><td>保留</td> <td>端口 Port</td> <td>用户 ID</td> <td>AlterID</td> <td>用户等级</td> <td>有效时间 T</td></tr></tbody></table> <p>其中：</p> <ul><li>端口 Port：Big Endian 格式的整型端口号；</li> <li>有效时间 T：分钟数；</li></ul> <p>客户端在收到动态端口指令时，服务器已开放新的端口用于通信，这时客户端可以将数据发往新的端口。在 T 分钟之后，这个端口将失效，客户端必须重新使用主端口进行通信。</p> <h2 id="注释"><a href="#注释" class="header-anchor">#</a> 注释</h2> <ul><li>为确保向前兼容性，所有保留字段的值必须为 0。</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.4a028816.js" defer></script><script src="/assets/js/2.f9df5c2e.js" defer></script><script src="/assets/js/45.1ad446f8.js" defer></script>
+  </body>
+</html>
