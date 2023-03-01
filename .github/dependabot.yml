@@ -14,7 +14,8 @@ updates:
     pull-request-branch-name:
       separator: "-"
 
-  - package-ecosystem: "npm"
+  - package-ecosystem: "npm"jhiuhiyogibhlkjlm
+  kjoi
     directory: "/"
     schedule:
       interval: "daily"
